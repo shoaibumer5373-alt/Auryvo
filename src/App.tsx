@@ -46,6 +46,7 @@ export default function App() {
   const [activePage, setActivePage] = useState<PageId>(readInitialPage);
 
   useEffect(() => {
+    if (window.location.protocol === 'file:') return;
     window.history.replaceState(null, '', `${window.location.pathname}#${activePage}`);
   }, [activePage]);
 

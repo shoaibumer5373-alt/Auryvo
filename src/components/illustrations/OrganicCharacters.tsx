@@ -1,4 +1,6 @@
-import { assetUrl } from '../../lib/assets';
+import auraBlob from '../../assets/illustrations/aura-blob.webp';
+import focusStar from '../../assets/illustrations/focus-star.webp';
+import moodOrb from '../../assets/illustrations/mood-orb.webp';
 import { cn } from '../../lib/cn';
 
 interface IllustrationProps {
@@ -8,7 +10,7 @@ interface IllustrationProps {
 export function AuraMascot({ className }: IllustrationProps) {
   return (
     <img
-      src={assetUrl('illustrations/aura-blob.webp')}
+      src={auraBlob}
       alt=""
       aria-hidden="true"
       draggable={false}
@@ -20,7 +22,7 @@ export function AuraMascot({ className }: IllustrationProps) {
 export function FocusStar({ className }: IllustrationProps) {
   return (
     <img
-      src={assetUrl('illustrations/focus-star.webp')}
+      src={focusStar}
       alt=""
       aria-hidden="true"
       draggable={false}
@@ -33,7 +35,7 @@ export function FocusStar({ className }: IllustrationProps) {
 export function MoodOrb({ className }: IllustrationProps) {
   return (
     <img
-      src={assetUrl('illustrations/mood-orb.webp')}
+      src={moodOrb}
       alt=""
       aria-hidden="true"
       draggable={false}

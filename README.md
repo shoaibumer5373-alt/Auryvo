@@ -36,13 +36,13 @@ npm run format:check
 
 ## Static preview
 
-A public, interactive static build is committed under `docs/`. Generate it with:
+A single self-contained HTML file is committed as `docs/index.html` and copied to `auryvo-preview.html`. It inlines the JavaScript, CSS, fonts, and illustrations, so it can be opened directly in a browser without a server. Generate it with:
 
 ```bash
 npm run build:preview
 ```
 
-The build uses relative asset paths and can be opened through GitHub’s HTML Preview service:
+The same file can also be opened through GitHub’s HTML Preview service:
 
 ```text
 https://htmlpreview.github.io/?https://github.com/shoaibumer5373-alt/Auryvo/blob/arena/2f0b19c7-auryvo/docs/index.html
@@ -58,9 +58,10 @@ src/
   pages/            Seven product screens
   state/            Typed React context and application provider
   styles/           Tailwind v4 import and semantic design tokens
+  assets/           Inlined organic mascot artwork
   types/            Shared TypeScript contracts
-docs/             Static public preview build
-public/illustrations/  Generated organic mascot artwork
+docs/             Self-contained public preview HTML
+auryvo-preview.html  Same preview file, ready to open locally
 ```
 
 ## Scope
