@@ -36,13 +36,13 @@ npm run format:check
 
 ## Static preview
 
-A public, interactive static build is committed under `docs/preview`. Generate it with:
+A public, interactive static build is committed under `docs/`, ready for GitHub Pages. Generate it with:
 
 ```bash
 npm run build:preview
 ```
 
-Because this build uses relative asset paths, it can be served from a subfolder or a static CDN without changing the Vite configuration.
+The build uses relative asset paths and writes a `.nojekyll` marker, so it can be served from the repository’s `/Auryvo/` Pages subpath without changing the Vite configuration.
 
 ## Project structure
 
@@ -55,6 +55,7 @@ src/
   state/            Typed React context and application provider
   styles/           Tailwind v4 import and semantic design tokens
   types/            Shared TypeScript contracts
+docs/             Static GitHub Pages preview build
 public/illustrations/  Generated organic mascot artwork
 ```
 
