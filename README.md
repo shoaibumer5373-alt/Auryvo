@@ -36,16 +36,16 @@ npm run format:check
 
 ## Static preview
 
-A single self-contained HTML file is committed as `docs/index.html` and copied to `auryvo-preview.html`. It inlines the JavaScript, CSS, fonts, and illustrations, so it can be opened directly in a browser without a server. Generate it with:
+A single self-contained HTML file is committed as `docs/index.html` and copied to `docs/preview.html` and `auryvo-preview.html`. It inlines the JavaScript, CSS, fonts, and illustrations, so it can be opened directly in a browser without a server. Generate it with:
 
 ```bash
 npm run build:preview
 ```
 
-The same file can also be opened through GitHub’s HTML Preview service:
+`docs/preview.html` is served directly by jsDelivr with the correct HTML content type:
 
 ```text
-https://htmlpreview.github.io/?https://github.com/shoaibumer5373-alt/Auryvo/blob/arena/2f0b19c7-auryvo/docs/index.html
+https://cdn.jsdelivr.net/gh/shoaibumer5373-alt/Auryvo@17039029517015b59b645b554091e2b1dea5190b/docs/preview.html
 ```
 
 ## Project structure
